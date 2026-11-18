@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Non-Metal Element Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <nav class="menu">
+    <span class="x">&#10005;</span>
+    <a href="/" class="tag t1">SEARCH</a>
+    <a href="#list" class="tag t2">NON-METALS</a>
+    <a href="#about" class="tag t3">ABOUT &middot; FAQ</a>
+  </nav>
+
+  <header><h1 class="logo">Element Lab</h1></header>
+
+  <main>
+    <h2 class="welcome">W<small>e</small>l<big>C</big>o<big>m</big>e<em>!</em></h2>
+
+    <div class="sticky lime">Type the symbol of a<br>non-metal element<br>and press search.</div>
+    <div class="sticky beige">e.g. H, O, Cl, Xe</div>
+    <div class="paper p1"></div>
+    <div class="paper p2"></div>
+    <div class="swatch s1"></div>
+    <div class="swatch s2"></div>
+
+    <form method="get" action="/" class="search">
+      <input type="text" name="symbol" value="{{VALUE}}" placeholder="Enter symbol (e.g. C)" maxlength="3" autocomplete="off" autofocus>
+      <button type="submit">Search</button>
+    </form>
+
+    {{RESULT}}
+
+    <section id="list" class="about">
+      <p>Elements in the list: H, He, C, N, O, F, Ne, P, S, Cl, Ar, Se, Br, Kr, I, Xe, Rn</p>
+    </section>
+    <section id="about" class="about">
+      <p>ICT 10 &middot; Q2 Skills Test &middot; data is stored in a Python dictionary.</p>
+    </section>
+  </main>
+</body>
+</html>
